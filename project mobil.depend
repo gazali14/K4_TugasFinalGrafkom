@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1640435037 source:d:\semester 3\grafkom\projectmobil\k4_tugasfinalgrafkom\main.cpp
+	<windows.h>
+	<gl/glut.h>
+	<math.h>
+

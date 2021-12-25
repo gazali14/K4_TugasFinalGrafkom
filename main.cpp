@@ -97,3 +97,59 @@ void display(void)
 
  glColor3f(0.0,0.0,0.0);
  glTranslatef(-3,8,17);
+ glTranslatef(-22,-8,-17);
+ cylinder(5, 5,3);
+
+ glColor3f(1.0,1.0,1.0);
+
+ glRotatef(90,1,0,0);
+ glTranslatef(8, 2.5,-15);
+ blok(2, 4, 5);
+
+
+ glRotatef(90,0,1,0);
+ glTranslatef(0,-0.2,7);
+ blok(2, 4, 8);
+
+
+ glRotatef(0,0,0,0);
+ glTranslatef(0,19.2,0);
+ blok(2, 4, 8);
+
+ glRotatef(90,0,1,0);
+ glTranslatef(7, 0,-8);
+ blok(2, 4, 5);
+
+ glColor3f(9.9,9.9,0.0);//lampu
+ glRotatef(90,0,1,0);
+ glTranslatef(0,-3,20);
+ cylinder(2, 2,3);
+
+ glColor3f(9.9,9.9,0.0);//lampu
+ glRotatef(0,0,0,0);
+ glTranslatef(0,-12,0);
+ cylinder(2, 2,3);
+
+ glColor3f(0.0,0.0,0.0);//knalpot
+ glRotatef(0,0,0,0);
+ glTranslatef(0,0,-52);
+ cylinder(1, 1,3);
+
+ glColor3f(1.0,1.0,1.0);
+ glRotatef(90,1,0,0);
+ glTranslatef(-8,3.5,-12);
+ blok(2, 4, 8);
+
+ glColor3f(9.0,0.0,0.0);//lampu atas
+ glRotatef(0,0,0,0);
+ glTranslatef(-8,28,0);
+ cylinder(1, 1,12);
+
+
+ glPopMatrix();
+
+
+ glFlush();
+ glutSwapBuffers();
+
+}
