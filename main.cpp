@@ -189,4 +189,24 @@ void cylinder(float alas,float atas,float tinggi)
  glColor3f(1.,0.,0.);
  glPopMatrix();
 } 
-// akhir
+// akhir 
+void blok(float tebal,int ratiol,int ratiop)
+{
+ float i,j;
+ glPushMatrix();
+ for(i=0;i<ratiop;i++)
+ {
+  glTranslatef(-(ratiol+1)*tebal/2,0.0,0.0);
+  for(j=0;j<ratiol;j++)
+  {
+   glTranslatef(tebal,0.0,0.0);
+   glutSolidCube(tebal);
+  }
+  glTranslatef(-(ratiol-1)*tebal/2,0.0,tebal);
+ }
+ glPopMatrix();
+}
+void tampil()
+{
+ display();
+}
