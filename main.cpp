@@ -1,3 +1,4 @@
+//commit gazali
 #include <windows.h>
 #include <gl/glut.h>
 #include <math.h>
@@ -100,6 +101,7 @@ void display(void)
  glTranslatef(-22,-8,-17);
  cylinder(5, 5,3);
 
+ //commit lisa
  glColor3f(1.0,1.0,1.0);
 
  glRotatef(90,1,0,0);
@@ -188,8 +190,9 @@ void cylinder(float alas,float atas,float tinggi)
  glutSolidCone(atas,0,20,1);
  glColor3f(1.,0.,0.);
  glPopMatrix();
-} 
-// akhir 
+}
+
+//commmit aldriani
 void blok(float tebal,int ratiol,int ratiop)
 {
  float i,j;
@@ -209,4 +212,22 @@ void blok(float tebal,int ratiol,int ratiop)
 void tampil()
 {
  display();
+}
+
+//commit anisa
+int main(int argc,char **argv)
+{
+
+ glutInit(&argc,argv);
+ glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB);//|GLUT_DEPTH);
+ glutInitWindowPosition(10,10);
+ glutInitWindowSize(1000,700);
+ glutCreateWindow("Mobil");
+ glClearColor(0.5,0.5,0.0,0.0);
+ glutDisplayFunc(display);
+ gluOrtho2D(-320., 320., -240.0, 240.0);
+ glutIdleFunc(tampil);
+ Mobil();
+ glutMainLoop();
+ return(0);
 }
