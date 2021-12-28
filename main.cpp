@@ -153,3 +153,40 @@ void display(void)
  glutSwapBuffers();
 
 }
+
+// commit alif
+void kerucut(float ngisor, float nduwur, float dowo)
+{
+ float i;
+ glPushMatrix();
+ glTranslatef(1.0,0.0,ngisor/24);
+ glutSolidCone(ngisor,0,32,4);
+ for(i=0;i<=dowo;i+=ngisor/24)
+ {
+  glTranslatef(0.0,0.0,ngisor/24);
+  glutSolidTorus(ngisor/4,ngisor-((i*(ngisor-nduwur))/dowo),16,16);
+ }
+ glTranslatef(0.0,0.0,ngisor/4);
+ glutSolidCone(nduwur,0,20,1);
+ glColor3f(0.,1.,1.);
+ glPopMatrix();
+}
+
+
+void cylinder(float alas,float atas,float tinggi)
+{
+ float i;
+ glPushMatrix();
+ glTranslatef(1.0,0.0,-alas/8);
+ glutSolidCone(alas,0,32,4);
+ for(i=0;i<=tinggi;i+=alas/24)
+ {
+  glTranslatef(0.0,0.0,alas/24);
+  glutSolidTorus(alas/4,alas-((i*(alas-atas))/tinggi),16,16);
+ }
+ glTranslatef(0.0,0.0,alas/4);
+ glutSolidCone(atas,0,20,1);
+ glColor3f(1.,0.,0.);
+ glPopMatrix();
+} 
+// akhir
