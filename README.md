@@ -1,5 +1,5 @@
 # K4_TugasFinalGrafkom
-
+jafar
 Nama Anggota kelompok 4 Grafika Komputer
 1. Alif Anugrah (E1E119045)
 2. Nurul Hajra Hadijah (E1E119008)
